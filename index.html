@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Launching Soon</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f4f4f4;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            height: 100vh;
+            text-align: center;
+        }
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            color: #40E0D0; /* Turquoise Blue */
+        }
+        p {
+            font-size: 1.2rem;
+            margin: 10px 0;
+        }
+        #timer {
+            font-size: 2rem;
+            font-weight: bold;
+            margin: 20px 0;
+            color: #064273; /* Turquoise Blue */
+        }
+        .contact {
+            margin-top: 20px;
+        }
+        .contact a {
+            text-decoration: none;
+            color: #40E0D0; /* Turquoise Blue */
+            font-weight: bold;
+        }
+        .contact a:hover {
+            text-decoration: underline;
+        }
+        footer {
+            background: #333;
+            color: #fff;
+            padding: 10px 20px;
+            width: 100%;
+            text-align: center;
+        }
+        footer a {
+            color: #40E0D0; /* Turquoise Blue */
+            text-decoration: none;
+            font-weight: bold;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <h1>We Are Launching Soon!</h1>
+    <p>Stay tuned! We're working hard to bring you something amazing.</p>
+    <div id="timer">00d 00h 00m 00s</div>
+    <p class="contact">
+        For inquiries, contact us at: 
+        <a href="mailto:info@seasonalexploremaldives.com">info@seasonalexploremaldives.com</a>
+    </p>
+
+    <footer>
+        <p>&copy; 2024 Seasonal Explore Maldives|All Rights Reserved</a>
+        </p>
+    </footer>
+
+    <script>
+        // Set the launch date (format: YYYY-MM-DDTHH:MM:SS)
+        const launchDate = new Date("2025-01-01T00:00:00").getTime();
+
+        const countdown = () => {
+            const now = new Date().getTime();
+            const timeLeft = launchDate - now;
+
+            if (timeLeft < 0) {
+                document.getElementById("timer").innerHTML = "We're Live!";
+                return;
+            }
+
+            const days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
+
+            document.getElementById("timer").innerHTML =
+                `${days}d ${hours}h ${minutes}m ${seconds}s`;
+        };
+
+        setInterval(countdown, 1000);
+    </script>
+</body>
+</html>
