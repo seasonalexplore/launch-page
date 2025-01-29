@@ -1,103 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Launching Soon</title>
-    <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            margin: 0;
-            padding: 0;
-            background: #f4f4f4;
-            color: #333;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: space-between;
-            height: 100vh;
-            text-align: center;
-        }
-        h1 {
-            font-size: 3rem;
-            margin-bottom: 1rem;
-            color: #40E0D0; /* Turquoise Blue */
-        }
-        p {
-            font-size: 1.2rem;
-            margin: 10px 0;
-        }
-        #timer {
-            font-size: 2rem;
-            font-weight: bold;
-            margin: 20px 0;
-            color: #064273; /* Turquoise Blue */
-        }
-        .contact {
-            margin-top: 20px;
-        }
-        .contact a {
-            text-decoration: none;
-            color: #40E0D0; /* Turquoise Blue */
-            font-weight: bold;
-        }
-        .contact a:hover {
-            text-decoration: underline;
-        }
-        footer {
-            background: #333;
-            color: #fff;
-            padding: 10px 20px;
-            width: 100%;
-            text-align: center;
-        }
-        footer a {
-            color: #40E0D0; /* Turquoise Blue */
-            text-decoration: none;
-            font-weight: bold;
-        }
-        footer a:hover {
-            text-decoration: underline;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Atoll Guides - Seasonal Explore Maldives</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>We Are Launching Soon!</h1>
-    <p>Stay tuned! We're working hard to bring you something amazing.</p>
-    <div id="timer">00d 00h 00m 00s</div>
-    <p class="contact">
-        For inquiries, contact us at: 
-        <a href="mailto:info@seasonalexploremaldives.com">info@seasonalexploremaldives.com</a>
-    </p>
+  <header class="header">
+    <div class="container">
+      
+      <nav>
+        <ul class="nav">
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#guides">Atolls</a></li>
+          <li><a href="#contact">Contact us</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-    <footer>
-        <p>&copy; 2024 Seasonal Explore Maldives|All Rights Reserved</a>
-        </p>
-    </footer>
+  
+<!-- About Us Section -->
+  <section id="about" class="about-us">
+    <div class="container">
+      <h2>About Us</h2>
+      <img src="images/about-us.png" alt="About Us - Seasonal Explore Maldives" style="max-width: 100%; height: auto; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+    </div>
+  </section>
 
-    <script>
-        // Set the launch date (format: YYYY-MM-DDTHH:MM:SS)
-        const launchDate = new Date("2025-01-01T00:00:00").getTime();
+  <section id="guides" class="guides">
+    <div class="container">
+      <h2>Atoll Guides</h2>
+      <div class="grid">
+        <!-- Atoll 1 -->
+        <div class="card">
+          <img src="atoll1.jpg" alt="Baa Atoll">
+          <h3>Baa Atoll</h3>
+          <p>Home to UNESCO Biosphere Reserve with rich marine biodiversity.</p>
+          <a href="#" class="btn">View Guide</a>
+        </div>
+        <!-- Atoll 2 -->
+        <div class="card">
+          <img src="atoll2.jpg" alt="Raa Atoll">
+          <h3>Raa Atoll</h3>
+          <p>Discover unspoiled islands and authentic local culture.</p>
+          <a href="#" class="btn">View Guide</a>
+        </div>
+        <!-- Atoll 3 -->
+        <div class="card">
+          <img src="atoll3.jpg" alt="Kaafu Atoll">
+          <h3>Kaafu Atoll</h3>
+          <p>The heart of Maldives with vibrant resorts and activities.</p>
+          <a href="#" class="btn">View Guide</a>
+        </div>
+        <!-- Atoll 4 -->
+        <div class="card">
+          <img src="atoll4.jpg" alt="Alif Alif Atoll">
+          <h3>Alif Alif Atoll</h3>
+          <p>Known for its scenic coral reefs and luxury resorts.</p>
+          <a href="#" class="btn">View Guide</a>
+        </div>
+      </div>
+    </div>
+  </section>
 
-        const countdown = () => {
-            const now = new Date().getTime();
-            const timeLeft = launchDate - now;
+  <footer>
+    <div class="container">
+      <p>&copy; 2024 Seasonal Explore Maldives. All rights reserved.</p>
+    </div>
+  </footer>
 
-            if (timeLeft < 0) {
-                document.getElementById("timer").innerHTML = "We're Live!";
-                return;
-            }
-
-            const days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
-            const hours = Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-            const minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
-            const seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
-
-            document.getElementById("timer").innerHTML =
-                `${days}d ${hours}h ${minutes}m ${seconds}s`;
-        };
-
-        setInterval(countdown, 1000);
-    </script>
+  <script src="script.js"></script>
 </body>
 </html>
