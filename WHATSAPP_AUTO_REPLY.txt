@@ -1,0 +1,11 @@
+
+Greeting:
+Hello 👋 Thank you for contacting Seasonal Explore Maldives 🇲🇻
+Please share:
+1. Travel dates
+2. Number of guests
+3. Budget range
+4. Island or Resort preference
+
+Away Message:
+Thank you for reaching out. Our team will respond within business hours (GMT+5).
