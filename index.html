@@ -1,37 +1,337 @@
 
-<!DOCTYPE html><html><head>
-<title>Seasonal Explore Maldives</title>
-<link rel="stylesheet" href="css/style.css">
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Seasonal Explore Maldives | Official Registered Travel Agency</title>
+
+  <meta name="description" content="Seasonal Explore Maldives – Official registered travel agency in Maldives. Resort, guesthouse, homestay packages and island combos (Ukulhas, Maafushi, Thoddoo, Hangnaameedhoo, Dhigurah). Book fast via WhatsApp." />
+  <meta name="keywords" content="Seasonal Explore Maldives, Maldives travel agency, Maldives packages, Ukulhas, Maafushi, Thoddoo, Dhigurah, Hangnaameedhoo, guesthouse packages, resort packages" />
+  <meta name="author" content="Seasonal Explore Maldives" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css" />
 </head>
+
 <body>
-<header>
-<h1>Seasonal Explore Maldives</h1>
-<p>Destination Management & Authentic Island Experiences</p>
-<nav>
-<a href="index.html">Home</a>
-<a href="packages.html">Packages</a>
-<a href="gallery.html">Gallery</a>
-<a href="satte2026.html">SATTE 2026</a>
-<a href="contact.html">Contact</a>
-</nav>
-<a class="btn" href="https://wa.me/9607577658">WhatsApp Us</a>
-</header>
+  <!-- Top Bar -->
+  <header class="topbar" id="top">
+    <div class="container topbar__inner">
+      <a class="brand" href="#top" aria-label="Seasonal Explore Maldives">
+        <img src="images/logo.png" alt="Seasonal Explore Maldives Logo" class="brand__logo">
+        <span class="brand__text">
+          <strong>Seasonal Explore Maldives</strong>
+          <small>Official Registered Travel Agency</small>
+        </span>
+      </a>
 
-<section>
-<h2>Why Choose Us</h2>
-<div class="grid">
-<div class="card">Licensed local travel partner</div>
-<div class="card">Direct island & resort connections</div>
-<div class="card">Custom itineraries</div>
-<div class="card">Maldives-based support</div>
-</div>
-</section>
+      <nav class="nav" aria-label="Primary">
+        <a href="#packages">Packages</a>
+        <a href="#combos">Combos</a>
+        <a href="#why">Why Us</a>
+        <a href="#contact">Contact</a>
+        <a class="nav__cta" href="#quote">Get Quote</a>
+      </nav>
+    </div>
+  </header>
 
-<section>
-<h2>Meet Us at SATTE 2026 – New Delhi</h2>
-<p>Official Maldives Destination Partner</p>
-</section>
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero__bg"></div>
+    <div class="container hero__inner">
+      <div class="hero__content">
+        <div class="badge">Light Tropical • Fast Booking • SATTE-ready</div>
+        <h1>Discover the Magic of Maldives</h1>
+        <p>
+          Curated island escapes — resorts, guesthouses & homestays — plus island combos
+          designed for adventure, culture, and turquoise lagoons.
+        </p>
 
-<footer>© 2026 Seasonal Explore Maldives</footer>
-</body></html>
+        <div class="hero__actions">
+          <a class="btn btn--primary" target="_blank" rel="noopener"
+             href="https://wa.me/9607577658?text=Hi%20Seasonal%20Explore%20Maldives%2C%20I%20would%20like%20a%20Maldives%20package%20quote.%20Please%20share%20options.">
+             Book via WhatsApp
+          </a>
+          <a class="btn btn--glass" href="#packages">Explore Packages</a>
+        </div>
+
+        <div class="hero__trust">
+          <div class="trust-pill">✅ Maldives-based Support</div>
+          <div class="trust-pill">✅ Fast Response</div>
+          <div class="trust-pill">✅ Custom Itineraries</div>
+        </div>
+      </div>
+
+      <div class="hero__card">
+        <h3>Quick Quote</h3>
+        <p class="muted">Send details and we’ll reply quickly.</p>
+
+        <form id="quote" class="form">
+          <label>
+            Name
+            <input id="q_name" type="text" placeholder="Your name" required />
+          </label>
+
+          <label>
+            Travel Dates
+            <input id="q_dates" type="text" placeholder="e.g., 12–18 March" required />
+          </label>
+
+          <label>
+            Guests
+            <input id="q_guests" type="text" placeholder="e.g., 2 adults" required />
+          </label>
+
+          <label>
+            Interest
+            <select id="q_interest">
+              <option>Resort Package</option>
+              <option>Guesthouse Package</option>
+              <option>Homestay Package</option>
+              <option>3-Island Combo (Ukulhas–Maafushi–Thoddoo)</option>
+              <option>Hangnaameedhoo–Dhigurah Adventure</option>
+              <option>Thoddoo Special</option>
+            </select>
+          </label>
+
+          <button class="btn btn--primary btn--block" type="submit">Send on WhatsApp</button>
+          <p class="tiny muted">
+            Prices are indicative and vary by season, availability, and customization.
+          </p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Official Registration -->
+  <section class="section section--sand">
+    <div class="container">
+      <div class="reg">
+        <div>
+          <h2>Officially Registered & Trusted</h2>
+          <p>
+            Seasonal Explore Maldives is listed as a registered travel agency with the Ministry of Tourism,
+            Republic of Maldives.
+          </p>
+        </div>
+        <div class="reg__actions">
+          <a class="btn btn--dark" target="_blank" rel="noopener"
+             href="https://www.tourism.gov.mv/en/registered/travel_agencies/search=Seasonal_Explore_Maldives">
+             View Registration
+          </a>
+          <div class="reg__note">✅ Adds credibility for partners & agents</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Packages -->
+  <section class="section" id="packages">
+    <div class="container">
+      <div class="section__head">
+        <h2>Packages</h2>
+        <p class="muted">Clear options. Fast customization. Perfect for SATTE enquiries.</p>
+      </div>
+
+      <div class="grid">
+        <article class="card">
+          <h3>Luxury Resort Packages</h3>
+          <p class="price">Starting from <strong>USD 1,350+</strong></p>
+          <ul class="list">
+            <li>Overwater / beach villa stays</li>
+            <li>Breakfast / meal plans</li>
+            <li>Speedboat / seaplane transfers</li>
+            <li>Snorkeling & lagoon experiences</li>
+          </ul>
+          <a class="btn btn--primary btn--block" target="_blank" rel="noopener"
+             href="https://wa.me/9607577658?text=Hi%20Seasonal%20Explore%20Maldives%2C%20I%20need%20a%20Resort%20Package%20quote.%20Please%20share%20options.">
+             Enquire Resort
+          </a>
+        </article>
+
+        <article class="card">
+          <h3>Guesthouse Packages</h3>
+          <p class="price">Starting from <strong>USD 900+</strong></p>
+          <div class="chips">
+            <span class="chip">Ukulhas: USD 70–160 / night</span>
+            <span class="chip">Maafushi: USD 65–150 / night</span>
+            <span class="chip">Thoddoo: USD 60–135 / night</span>
+          </div>
+          <ul class="list">
+            <li>Comfortable local island stays</li>
+            <li>Breakfast included</li>
+            <li>Shared transfers (speedboat / ferry)</li>
+            <li>Snorkeling & sandbank tours</li>
+          </ul>
+          <a class="btn btn--primary btn--block" target="_blank" rel="noopener"
+             href="https://wa.me/9607577658?text=Hi%20Seasonal%20Explore%20Maldives%2C%20I%20need%20a%20Guesthouse%20Package%20quote%20(Ukulhas%2FMaafushi%2FThoddoo).">
+             Enquire Guesthouse
+          </a>
+        </article>
+
+        <article class="card">
+          <h3>Homestay & Budget Island</h3>
+          <p class="price">Starting from <strong>USD 650+</strong></p>
+          <ul class="list">
+            <li>Local homestay accommodation</li>
+            <li>Daily breakfast</li>
+            <li>Public ferry transfer options</li>
+            <li>Great for long stays & culture</li>
+          </ul>
+          <a class="btn btn--primary btn--block" target="_blank" rel="noopener"
+             href="https://wa.me/9607577658?text=Hi%20Seasonal%20Explore%20Maldives%2C%20I%20need%20a%20Homestay%20%2F%20Budget%20Package%20quote.">
+             Enquire Budget
+          </a>
+        </article>
+      </div>
+
+      <p class="disclaimer">
+        <strong>Disclaimer:</strong> Prices are indicative and subject to change based on travel dates, season,
+        availability, and customization. Final pricing will be confirmed at the time of booking.
+      </p>
+    </div>
+  </section>
+
+  <!-- Combos -->
+  <section class="section section--sky" id="combos">
+    <div class="container">
+      <div class="section__head">
+        <h2>Island Combos & Specials</h2>
+        <p class="muted">Best for travelers who want more than one island.</p>
+      </div>
+
+      <div class="grid">
+        <article class="card">
+          <h3>3-Island Explorer Combo</h3>
+          <p class="muted"><strong>Ukulhas ✦ Maafushi ✦ Thoddoo</strong></p>
+          <p class="price">Starting from <strong>USD 650+</strong></p>
+          <ul class="list">
+            <li>Beaches + culture + water activities</li>
+            <li>Guesthouse stays + breakfast</li>
+            <li>Airport & inter-island transfers</li>
+            <li>Snorkeling + sandbank / cruise options</li>
+          </ul>
+          <a class="btn btn--dark btn--block" target="_blank" rel="noopener"
+             href="https://wa.me/9607577658?text=Hi%20Seasonal%20Explore%20Maldives%2C%20I%20want%20the%203-Island%20Combo%20(Ukulhas%E2%80%93Maafushi%E2%80%93Thoddoo).%20Please%20share%20details%20and%20final%20pricing.">
+             Get Combo Details
+          </a>
+        </article>
+
+        <article class="card">
+          <h3>Hangnaameedhoo → Dhigurah</h3>
+          <p class="muted"><strong>Adventure & Water Sports Special</strong></p>
+          <p class="price">Starting from <strong>USD 720+</strong></p>
+          <ul class="list">
+            <li>Snorkeling + sandbank</li>
+            <li>Water sports add-ons</li>
+            <li>Dhigurah marine life zone</li>
+            <li>Speedboat transfers (shared)</li>
+          </ul>
+          <a class="btn btn--dark btn--block" target="_blank" rel="noopener"
+             href="https://wa.me/9607577658?text=Hi%20Seasonal%20Explore%20Maldives%2C%20I%20want%20Hangnaameedhoo%E2%80%93Dhigurah%20Adventure%20%26%20Water%20Sports%20package.%20Please%20share%20options.">
+             Enquire Adventure
+          </a>
+        </article>
+
+        <article class="card">
+          <h3>Thoddoo Specials</h3>
+          <p class="muted"><strong>Beach ✦ Snorkeling ✦ Local Life</strong></p>
+          <p class="price">Starting from <strong>USD 280+</strong></p>
+          <ul class="list">
+            <li>Beach escape (3N/4D)</li>
+            <li>Adventure & snorkeling (4N/5D)</li>
+            <li>Local life + fruit farms (5N/6D)</li>
+          </ul>
+          <a class="btn btn--dark btn--block" target="_blank" rel="noopener"
+             href="https://wa.me/9607577658?text=Hi%20Seasonal%20Explore%20Maldives%2C%20I%20want%20Thoddoo%20special%20packages.%20Please%20share%203%20options%20with%20pricing.">
+             Enquire Thoddoo
+          </a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Us -->
+  <section class="section" id="why">
+    <div class="container">
+      <div class="section__head">
+        <h2>Why Seasonal Explore Maldives</h2>
+        <p class="muted">Reliable, responsive, and partner-friendly.</p>
+      </div>
+
+      <div class="grid">
+        <div class="card card--icon">
+          <div class="icon">🌴</div>
+          <h3>Local Expertise</h3>
+          <p class="muted">Maldives-based support with real island knowledge.</p>
+        </div>
+        <div class="card card--icon">
+          <div class="icon">⚡</div>
+          <h3>Fast Responses</h3>
+          <p class="muted">Quick quotes and clear communication on WhatsApp.</p>
+        </div>
+        <div class="card card--icon">
+          <div class="icon">🧾</div>
+          <h3>Transparent Options</h3>
+          <p class="muted">Clear inclusions, upgrades, and flexible add-ons.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="section section--sand" id="contact">
+    <div class="container">
+      <div class="contact">
+        <div>
+          <h2>Contact</h2>
+          <p class="muted">
+            WhatsApp: <strong>+960 757 7658</strong><br/>
+            Email: <strong>seasonalexploremaldives@gmail.com</strong><br/>
+            Based in Maldives • Fast Support
+          </p>
+          <a class="btn btn--primary" target="_blank" rel="noopener"
+             href="https://wa.me/9607577658?text=Hi%20Seasonal%20Explore%20Maldives%2C%20please%20share%20your%20best%20packages%20and%20rates.">
+             Message on WhatsApp
+          </a>
+        </div>
+
+        <div class="card">
+          <h3>For Agents / Partnerships</h3>
+          <p class="muted">We welcome travel agent collaboration and group enquiries.</p>
+          <a class="btn btn--dark btn--block" target="_blank" rel="noopener"
+             href="https://wa.me/9607577658?text=Hi%20Seasonal%20Explore%20Maldives%2C%20We%20met%20at%20SATTE.%20I%E2%80%99d%20like%20to%20discuss%20a%20partnership.%20Company%3A%20%20%20Market%3A%20%20%20">
+             SATTE Partnership Message
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div>
+        <strong>Seasonal Explore Maldives</strong><br/>
+        <span class="muted">Official Registered Travel Agency</span>
+      </div>
+      <div class="footer__right">
+        <span>© 2024 Seasonal Explore Maldives. All rights reserved.</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp -->
+  <a class="wa-float" target="_blank" rel="noopener"
+     href="https://wa.me/9607577658?text=Hi%20Seasonal%20Explore%20Maldives%2C%20I%20need%20a%20quote."
+     aria-label="WhatsApp">
+    💬
+  </a>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
