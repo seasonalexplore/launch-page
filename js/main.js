@@ -1,4 +1,16 @@
 document.addEventListener("DOMContentLoaded", () => {
+  // Mobile menu
+  const navToggle = document.getElementById("navToggle");
+  const navMenu = document.getElementById("navMenu");
+
+  if (navToggle && navMenu) {
+    navToggle.addEventListener("click", () => {
+      const open = navMenu.classList.toggle("isOpen");
+      navToggle.setAttribute("aria-expanded", open ? "true" : "false");
+    });
+  }
+
+  // WhatsApp quote form
   const form = document.querySelector("#quote");
   if (!form) return;
 
@@ -11,14 +23,14 @@ document.addEventListener("DOMContentLoaded", () => {
     const interest = document.getElementById("q_interest").value;
 
     const msg =
-      `Hi Seasonal Explore Maldives,%0A` +
-      `Name: ${encodeURIComponent(name)}%0A` +
-      `Travel Dates: ${encodeURIComponent(dates)}%0A` +
-      `Guests: ${encodeURIComponent(guests)}%0A` +
-      `Interest: ${encodeURIComponent(interest)}%0A%0A` +
+      `Hi Seasonal Explore Maldives,\n` +
+      `Name: ${name}\n` +
+      `Travel Dates: ${dates}\n` +
+      `Guests: ${guests}\n` +
+      `Interest: ${interest}\n\n` +
       `Please share available options and final pricing.`;
 
-    const wa = `https://wa.me/9607577658?text=${msg}`;
+    const wa = `https://wa.me/9607577658?text=${encodeURIComponent(msg)}`;
     window.open(wa, "_blank");
   });
 });
